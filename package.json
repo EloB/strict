@@ -1,0 +1,27 @@
+{
+  "name": "strict",
+  "version": "0.0.0",
+  "description": "Strict typing in Javascript function arguments",
+  "main": "src/strict.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EloB/strict.git"
+  },
+  "keywords": [
+    "strict",
+    "typing",
+    "function",
+    "arguments"
+  ],
+  "author": "Olle \"EloB\" Bröms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EloB/strict/issues"
+  }
+}
