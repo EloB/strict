@@ -17,7 +17,7 @@ Framework.prototype.animate = strict({
 	}
 }, function(values, duration, callback) {
 	// Put your animation logic here 
-})
+});
 ```
 
 ## Basic coffeescript example
