@@ -24,13 +24,13 @@ Framework.prototype.animate = strict({
 ``` coffeescript
 class Framework
 	animate: strict
-	  "Object, Function": (values, callback) ->
+	  'Object, Function': (values, callback) ->
 	    [values, 400, callback]
 
-	  "Object, Number, Function": (values, duration, callback) ->
+	  'Object, Number, Function': (values, duration, callback) ->
 	    arguments
 
-	  Object: (values) ->
+	  'Object': (values) ->
 	    [values, 400, ->]
 
 	, (values, duration, callback) ->
