@@ -1,10 +1,7 @@
-/* jshint laxcomma:true */
-/* global define, module, exports, require */
-
 'use strict';
 
 (function (define){
-    define(function (require, exports, module) {
+    define(function () {
         function strict(types, fn) {
             var obj
               , propName
@@ -31,6 +28,7 @@
             return function() {
                 var i
                   , j
+                  , fx
                   , args
                   , type
                   , typeName
@@ -47,9 +45,13 @@
                 if(typeName in types) {
                     type = types[typeName];
                     
-                    type.apply(function() {
+                    fx = function() {
                         args = arguments;
-                    }, arguments);
+                    };
+
+                    fx.scope = this;
+
+                    type.apply(fx, arguments);
                     
                     return fn.apply(this, args);
                 } else {
@@ -58,6 +60,8 @@
             };
         }
 
-        module.exports = strict;
+        return strict;
     });
-}(typeof define == 'function' && define.amd ? define : function (factory) { module.exports = factory(require, exports, module) || exports; }));
+}(typeof define == 'function' && define.amd ? define : function (factory) {
+    module.exports = factory(require, exports, module) || exports;
+}));

@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "make test"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,12 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EloB/strict/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-mocha-test": "~0.8.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "should": "~2.1.1"
   }
 }

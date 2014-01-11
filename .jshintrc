@@ -1,0 +1,18 @@
+{
+  "browser": true,
+  "node": true,
+  "laxcomma": true,
+  "esnext": true,
+  "globals": {
+    "require": true,
+    "define": true,
+    "describe": true,
+    "it": true
+  },
+  "globalstrict": true,
+  "quotmark": true,
+  "smarttabs": true,
+  "trailing": true,
+  "undef": true,
+  "unused": true
+}
