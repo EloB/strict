@@ -1,7 +1,7 @@
 strict.js
 =========
 
-## Javascript examples
+## Basic javascript example
 ``` js
 function Framework() {}
 
@@ -20,7 +20,7 @@ Framework.prototype.animate = strict({
 })
 ```
 
-## Coffeescript examples
+## Basic coffeescript example
 ``` coffeescript
 class Framework
 	animate: strict
